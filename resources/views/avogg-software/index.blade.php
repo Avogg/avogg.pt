@@ -1,6 +1,6 @@
 <x-guest-layout>
     <div class="bg-avogg-dark min-h-screen min-w-screen text-white">
-        <x-navbar />
+        <x-nav-bar />
         <section class="min-h-screen">
             <div class="flex flex-col md:grid md:grid-cols-2 items-center justify-between gap-x-10 min-h-screen">
                 <div class="md:px-10 md:col-span-1 my-auto">
@@ -8,7 +8,7 @@
                     <p class="text-xl px-10 md:px-0 mt-5 text-center md:text-left">Se tem uma ideia nós somos a equipa ideal para a concretizar!</p>
                     <div class="flex flex-col md:flex-row px-10 text-center md:px-0 mt-10 space-y-5 md:space-y-0 md:space-x-10">
                         <a href="#projects" class="px-10 py-2 bg-avogg font-semibold rounded-md hover:bg-opacity-80">
-                            Os nossos projetos
+                            O nosso portfolio
                         </a>
                         <a href="#services" class="px-10 py-2 bg-avogg font-semibold rounded-md hover:bg-opacity-80">
                             Os nossos serviços
@@ -55,11 +55,15 @@
                     </a>
                 </div>
             </div>
+            <div class="px-10 pt-32 space-y-5">
+                <p>(Heyy.. ainda há mais para ver!)</p>
+                <p class="animate-bounce"><i data-feather="arrow-down"></i></p>
+            </div>
         </section>
         <section class="min-h-screen pt-32" id="projects">
             <p class="text-3xl font-semibold px-10 text-center md:text-left">O nosso portfolio</p>
             <div class="grid md:grid-cols-3 mt-10 px-10 h-full">
-                <div class="flex flex-col items-center justify-items-center mx-10 md:mx-0 p-5 rounded bg-white bg-opacity-10 mt-10 text-center">
+                <div class="flex flex-col items-center justify-items-center px-10 py-5 md:mx-0 rounded bg-white bg-opacity-10 mt-10 text-center">
                     <div class="flex bg-[#093595] w-40 h-40 rounded-full items-center justify-center">
                         <img src="/projects/necho.png" class="w-3/4" />
                     </div>
