@@ -922,6 +922,40 @@ select {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
 }
+@-webkit-keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+@keyframes pulse {
+
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@-webkit-keyframes ping {
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+@keyframes ping {
+
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-ping {
+  -webkit-animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+          animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
 .cursor-default {
   cursor: default;
 }
@@ -1486,12 +1520,6 @@ select {
 .hover\:mt-14:hover {
   margin-top: 3.5rem;
 }
-@-webkit-keyframes pulse {
-
-  50% {
-    opacity: .5;
-  }
-}
 @keyframes pulse {
 
   50% {
@@ -1693,6 +1721,48 @@ select {
 }
 .disabled\:opacity-25:disabled {
   opacity: 0.25;
+}
+@media (prefers-reduced-motion: no-preference) {
+
+  @-webkit-keyframes spin {
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .motion-safe\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+
+  @-webkit-keyframes spin {
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin {
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .motion-reduce\:animate-spin {
+    -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+  }
 }
 @media (prefers-color-scheme: dark) {
 
