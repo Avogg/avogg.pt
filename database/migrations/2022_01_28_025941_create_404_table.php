@@ -13,7 +13,7 @@ class Create404Table extends Migration
      */
     public function up()
     {
-        Schema::create('404', function (Blueprint $table) {
+        Schema::create('notfound', function (Blueprint $table) {
             $table->id();
             $table->string('message');
             $table->timestamps();
@@ -27,6 +27,6 @@ class Create404Table extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('404');
+        Schema::dropIfExists('notfound');
     }
 }

@@ -14,25 +14,25 @@ class NotFoundSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'Ah, sh*t... here we go again!'
         ]);
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'This is awkward... this page... was not found...'
         ]);
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'Oh, you shouldn\'t be here!'
         ]);
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'Heyy, nothing to see hereeee'
         ]);
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'Are you serious?'
         ]);
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'Lookin\' kinda sus, not gonna lie 👀'
         ]);
-        DB::table('404')->insert([
+        DB::table('notfound')->insert([
             'message' => 'Pdbeh brx vkrxog vwduw zrunlqj...'
         ]);
     }

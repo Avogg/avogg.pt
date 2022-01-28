@@ -9,7 +9,7 @@ class NotFoundMessage extends Model
 {
     use HasFactory;
 
-    protected $table = '404';
+    protected $table = 'notfound';
 
     protected $fillable = [
         'message'
